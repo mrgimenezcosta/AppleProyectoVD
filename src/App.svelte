@@ -95,13 +95,65 @@
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
+        <h3 class= "anios">1985</h3>
+        <p class="texto">Apple solicita la renuncia a Steve Jobs. Despues de esto, Apple continua pero se estanca y llegó a estar cerca de la quiebra.</p>
+      </div>
+    </section>
+    <section class="step_foreground">
+      <div class="epi_foreground">
+        <h3 class= "anios">1997</h3>
+        <p class="texto">En 1997, la directiva de Apple solicita a Jobs que regrese.</p>
+      </div>
+    </section>
+
+    <section class="step_foreground">
+      <div class="epi_foreground">
         <h3 class= "anios">1998</h3>
-        <p class="texto">En 1998, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación y diseño de vanguardia. Este fue solo el comienzo de una serie de productos que transformarían industrias enteras.</p>
+        <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación y diseño de vanguardia. Este fue solo el comienzo de una serie de productos que transformarían industrias enteras.</p>
       </div>
     </section>
     <section class="step_foreground_foto">
       <div class="epi_foreground_foto">
         <img src="/images/ImacG3.png" width="600" alt="G3" />
+      </div>
+    </section>
+    <section class="step_foreground">
+      <div class="epi_foreground">
+        <h3 class= "anios">2001</h3>
+        <p class="texto">Apple presentó el iPod, un reproductor de audio digital. Un producto que revolucionan la industria de la música digital.</p>
+      </div>
+    </section>
+    <section class="step_foreground_foto">
+      <div class="epi_foreground_foto">
+        <img src="/images/Ipod1.png" width="300" alt="G3" />
+      </div>
+    </section>
+    <section class="step_foreground">
+      <div class="epi_foreground">
+        <h3 class= "anios">2007</h3>
+        <p class="texto">Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El Iphone.</p>
+      </div>
+    </section>
+    <section class="step_foreground_foto">
+      <div class="epi_foreground_foto">
+        <img src="/images/Iphone1.png" width="400" alt="G3" />
+      </div>
+    </section>
+    <section class="step_foreground">
+      <div class="epi_foreground">
+        <h3 class= "anios">2010</h3>
+        <p class="texto">A tres años de haber hecho historia con la presentación del primer iPhone, Steve Jobs volvía a sorprender al mundo con el anuncio de iPad</p>
+      </div>
+    </section>
+    <section class="step_foreground_foto">
+      <div class="epi_foreground_foto">
+        <img src="/images/Ipad1.png" width="800" alt="G3" />
+      </div>
+    </section>
+    <section class="step_foreground">
+      <div class="epi_foreground">
+        <h3 class= "anios">2011</h3>
+        <p class="texto">Este año marco el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtio en la empresa más valiosa del mundo.</p>
       </div>
     </section>
   </div>
