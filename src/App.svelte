@@ -23,7 +23,7 @@
     5: "lineas_income_1998.png"
   }
 
-
+  let years = ["1980", "1984", "1984", "1984","1985", "1997", "1998","1998", "2001", "2001", "2007", "2007", "2010","2010", "2011"];
 </script>
 
 <main>
@@ -49,6 +49,11 @@
   />
   {/if}
 
+  <!-- Timeline -->
+  <div class="timeline">
+    <h3>{years[index]}</h3>
+  </div>
+
   <!-- Scroller -->
   <Scroller
     top={top}
@@ -67,13 +72,11 @@
     
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">1980</h3>
         <p class="texto">Entre septiembre de 1977 y septiembre de 1980, las ventas anuales crecieron de 775.000 dólares a 118 millones de dólares, una tasa de crecimiento anual promedio del 533%.</p>
       </div>
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">1984</h3>
         <p class="texto">Uno de los eventos que marcó el gran éxito de la compañía y que es uno de los principales hitos de la historia de Apple es la presentación del <b>Macintosh</b>, que se llevó a cabo el 24 de enero de 1984, de la mano de Steve Jobs. De hecho, a raíz de esta presentación se empezó a ver un cambio, de cierta manera, radical en el mundo de la informática
           , ya que este dispositivo se considera el primer ordenador personal con interfaz gráfica.</p>
       </div>
@@ -95,20 +98,17 @@
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">1985</h3>
         <p class="texto">Apple solicita la renuncia a Steve Jobs. Despues de esto, Apple continua pero se estanca y llegó a estar cerca de la quiebra.</p>
       </div>
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">1997</h3>
         <p class="texto">En 1997, la directiva de Apple solicita a Jobs que regrese.</p>
       </div>
     </section>
 
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">1998</h3>
         <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación y diseño de vanguardia. Este fue solo el comienzo de una serie de productos que transformarían industrias enteras.</p>
       </div>
     </section>
@@ -119,7 +119,6 @@
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">2001</h3>
         <p class="texto">Apple presentó el iPod, un reproductor de audio digital. Un producto que revolucionan la industria de la música digital.</p>
       </div>
     </section>
@@ -130,7 +129,6 @@
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">2007</h3>
         <p class="texto">Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El Iphone.</p>
       </div>
     </section>
@@ -141,7 +139,6 @@
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">2010</h3>
         <p class="texto">A tres años de haber hecho historia con la presentación del primer iPhone, Steve Jobs volvía a sorprender al mundo con el anuncio de iPad</p>
       </div>
     </section>
@@ -152,7 +149,6 @@
     </section>
     <section class="step_foreground">
       <div class="epi_foreground">
-        <h3 class= "anios">2011</h3>
         <p class="texto">Este año marco el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtio en la empresa más valiosa del mundo.</p>
       </div>
     </section>
@@ -198,8 +194,9 @@
   pointer-events: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 50px; /* Ajusta este valor según sea necesario */
 }
 .step_foreground,
 .step_foreground_foto {
@@ -238,5 +235,16 @@
   align-items: center;
   height: 100vh;
 }
-
+.timeline {
+  position: fixed;
+  left: 20px; /* Ajusta este valor según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
 </style>
