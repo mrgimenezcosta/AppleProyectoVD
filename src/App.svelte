@@ -174,6 +174,7 @@
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }
 
   .headline {
@@ -182,6 +183,7 @@
     font-weight: normal;
     text-align: center;
     margin: 20px;
+    color: #333;
   }
 
   .bajada {
@@ -189,16 +191,19 @@
     font-weight: normal;
     text-align: center;
     margin: 10px;
+    color: #666;
   }
 
   .anios {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    color: #333;
   }
 
   .headline b {
     display: block;
+    font-size: 32px;
   }
 
   /* Estilos para el scroller */
@@ -225,11 +230,12 @@
   .epi_foreground {
     padding: 20px;
     max-width: 500px;
-    background-color: rgba(21, 20, 20, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto; /* Centramos horizontalmente */
+    border-radius: 10px;
   }
 
   .epi_foreground_foto {
