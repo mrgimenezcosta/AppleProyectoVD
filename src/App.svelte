@@ -20,7 +20,7 @@
     5: "lineas_income_1998.png"
   };
 
-  let years = ["1980", "1984", "1984", "1985", "1997", "1998", "2001", "2006", "2007", "2010", "2011", "2014", "2014"];
+  let years = ["1980", "1984", "1984", "1985", "1997", "1998", "2001", "2006", "2007", "2010", "2011", "2014", "2014", "2016", "2023", "2023"];
   let icons = {
     1984: "icon_1984.png",
     1998: "icon_1998.png",
@@ -28,7 +28,9 @@
     2006: "icon_2006.png",
     2007: "icon_2007.png",
     2010: "icon_2010.png",
-    2014: "icon_2014.png"
+    2014: "icon_2014.png",
+    2016: "icon_2016.png",
+    2023: "icon_2023.png"
   };
 
   let uniqueYears = [...new Set(years)];
@@ -183,6 +185,21 @@
       <section class="step_foreground">
         <div class="epi_foreground">
           <p class="texto"> En este mismo evento se anuncia el Apple Watch, que se convierte en el reloj, no solo smartwatch, más vendido de todos los tiempos.</p>
+        </div>
+      </section>
+      <section class="step_foreground">
+        <div class="epi_foreground">
+          <p class="texto">Apple reinventa los audífonos inalámbricos con los AirPods.</p>
+        </div>
+      </section>
+      <section class="step_foreground">
+        <div class="epi_foreground">
+          <p class="texto"> Anunciando la fecha de lanzamiento del Vision Pro Tim Cook explico: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado", dijo Cook. "Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
+        </div>
+      </section>
+      <section class="step_foreground">
+        <div class="epi_foreground">
+          <p class="texto">Las acciones de Apple aumentaron un 1,5% en las primeras operaciones del lunes tras el anuncio de la fecha de lanzamiento del Vision Pro. </p>
         </div>
       </section>
     </div>
