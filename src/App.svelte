@@ -20,13 +20,15 @@
     5: "lineas_income_1998.png"
   };
 
-  let years = ["1980", "1984", "1984", "1984", "1985", "1997", "1998", "1998", "2001", "2001", "2007", "2007", "2010", "2010", "2011"];
+  let years = ["1980", "1984", "1984", "1985", "1997", "1998", "2001", "2006", "2007", "2010", "2011", "2014", "2014"];
   let icons = {
     1984: "icon_1984.png",
     1998: "icon_1998.png",
     2001: "icon_2001.png",
+    2006: "icon_2006.png",
     2007: "icon_2007.png",
-    2010: "icon_2010.png"
+    2010: "icon_2010.png",
+    2014: "icon_2014.png"
   };
 
   let uniqueYears = [...new Set(years)];
@@ -99,11 +101,11 @@
           <p class="texto">Uno de los eventos que marcó el gran éxito de la compañía y que es uno de los principales hitos de la historia de Apple es la presentación del <b>Macintosh</b>, que se llevó a cabo el 24 de enero de 1984, de la mano de Steve Jobs. De hecho, a raíz de esta presentación se empezó a ver un cambio, de cierta manera, radical en el mundo de la informática, ya que este dispositivo se considera el primer ordenador personal con interfaz gráfica.</p>
         </div>
       </section>
-      <section class="step_foreground_foto">
+      <!-- <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <img src="/images/macintosh.png" width="600" alt="primer publicidad de apple" />
         </div>
-      </section>
+      </section> -->
       <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <video width="800" style="margin-bottom: 80px;" controls>
@@ -128,19 +130,24 @@
           <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación y diseño de vanguardia. Este fue solo el comienzo de una serie de productos que transformarían industrias enteras.</p>
         </div>
       </section>
-      <section class="step_foreground_foto">
+      <!-- <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <img src="/images/ImacG3.png" width="600" alt="G3" />
         </div>
-      </section>
+      </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
           <p class="texto">Apple presentó el iPod, un reproductor de audio digital. Un producto que revolucionan la industria de la música digital.</p>
         </div>
       </section>
-      <section class="step_foreground_foto">
+      <!-- <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <img src="/images/Ipod1.png" width="300" alt="G3" />
+        </div>
+      </section> -->
+      <section class="step_foreground">
+        <div class="epi_foreground">
+          <p class="texto">Hasta 2006, Apple tenía en su catálogo varios modelos de iBook y PowerBook, que componían su línea de equipos portátiles. Sin embargo, ese año la compañía presentó una evolución de lo que ya existía, pero ahora con un estilo renovado y un nombre nuevo: MacBook.</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -148,24 +155,34 @@
           <p class="texto">Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El Iphone.</p>
         </div>
       </section>
-      <section class="step_foreground_foto">
+      <!-- <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <img src="/images/Iphone1.png" width="400" alt="G3" />
         </div>
-      </section>
+      </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
           <p class="texto">A tres años de haber hecho historia con la presentación del primer iPhone, Steve Jobs volvía a sorprender al mundo con el anuncio de iPad</p>
         </div>
       </section>
-      <section class="step_foreground_foto">
+      <!-- <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <img src="/images/Ipad1.png" width="800" alt="G3" />
+        </div>
+      </section> -->
+      <section class="step_foreground">
+        <div class="epi_foreground">
+          <p class="texto">Este año marco el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtio en la empresa más valiosa del mundo. Tim Cook asume como CEO.</p>
         </div>
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Este año marco el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtio en la empresa más valiosa del mundo.</p>
+          <p class="texto">Tim Cook presenta el iphone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido de todos los tiempos, llegando a vender 247.5 millones modelos. En este mismo evento se anuncia el Apple Watch.</p>
+        </div>
+      </section>
+      <section class="step_foreground">
+        <div class="epi_foreground">
+          <p class="texto"> En este mismo evento se anuncia el Apple Watch, que se convierte en el reloj, no solo smartwatch, más vendido de todos los tiempos.</p>
         </div>
       </section>
     </div>
