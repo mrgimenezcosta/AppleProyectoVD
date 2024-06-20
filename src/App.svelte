@@ -3,7 +3,6 @@
   import DebugScroller from "./components/DebugScroller.svelte";
   import { onMount } from "svelte";
 
-  /* Variables para el scroller */
   let count;
   let index;
   let offset;
@@ -12,7 +11,6 @@
   let threshold = 0.5;
   let bottom = 0.9;
 
-  /* Charts */
   let charts = {
     0: "barra_1980.png",
     1: "lineas_stock_1984.png",
@@ -23,14 +21,18 @@
   };
 
   let years = ["1980", "1984", "1984", "1984", "1985", "1997", "1998", "1998", "2001", "2001", "2007", "2007", "2010", "2010", "2011"];
+  let icons = {
+    1984: "icon_1984.png",
+    1998: "icon_1998.png",
+    2001: "icon_2001.png",
+    2007: "icon_2007.png",
+    2010: "icon_2010.png"
+  };
 
-  // Variable para manejar la visibilidad del timeline
+  let uniqueYears = [...new Set(years)];
   let showTimeline = false;
-
-  // Elemento de referencia para el header
   let headerElement;
 
-  // Verificar la posición del scroll
   const handleScroll = () => {
     if (headerElement) {
       const headerBottom = headerElement.getBoundingClientRect().bottom;
@@ -38,7 +40,6 @@
     }
   };
 
-  // Montar el evento de scroll
   onMount(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -64,12 +65,17 @@
   <DebugScroller index={index} count={count} offset={offset} progress={progress} />
   {/if}
 
-  <!-- Timeline -->
   <div class="timeline" class:visible={showTimeline}>
-    <h3>{years[index]}</h3>
+    {#each uniqueYears as year, i}
+      <div class="timeline-item">
+        <span class="year-text {years[index] == year ? 'active' : 'grey'}">{year}</span>
+        {#if years[index] == year && icons[year]}
+        <img src="/images/{icons[year]}" alt={year} />
+        {/if}
+      </div>
+    {/each}
   </div>
 
-  <!-- Scroller -->
   <Scroller
     top={top}
     threshold={threshold}
@@ -261,7 +267,7 @@
 
   .timeline {
     position: fixed;
-    left: 20px; /* Ajusta este valor según sea necesario */
+    left: 20px; /* Timeline on the left */
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
@@ -275,5 +281,29 @@
 
   .timeline.visible {
     display: block; /* Mostrar cuando se cumplan las condiciones */
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .timeline-item img {
+    width: 70px; /* Ajustar el tamaño de los íconos */
+    margin-left: 10px;
+  }
+
+  .year-text {
+    transition: font-size 0.3s ease, color 0.3s ease; /* Transición para tamaño y color */
+  }
+
+  .year-text.grey {
+    color: grey; /* Color gris para años no activos */
+  }
+
+  .year-text.active {
+    font-size: 50px; /* Tamaño de la letra cuando está activo */
+    color: black; /* Color del texto cuando está activo */
   }
 </style>
