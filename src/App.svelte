@@ -54,15 +54,12 @@
 
 <main>
   <div class="header" bind:this={headerElement}>
-    <img src="/images/primer_logo.png" width="100" alt="primer logo" />
-    <h3 class="headline">
-      <b>Apple Computer Company</b>
-      Think different.
-    </h3>
-    <p class="bajada">La evolución según Apple.</p>
+    <img src="/images/logo_actual.png" width="100" alt="primer logo" />
+    <h3 class="headline">La evolución según Apple</h3>
+    <p class="bajada">Think different.</p>
     <h3 class="anios">1976</h3>
-    <p class="texto">Apple, la empresa fundada por Steve Jobs, Steve Wozniak y Ronald Wayne, vio la luz en el garaje de los padres de Jobs en Cupertino, 1976. Su primer producto, conocido como el <b>Apple I</b>, consistía en un ordenador personal que combinaba un microprocesador con una conexión para un teclado y un ratón.</p>
-    <img src="/images/primer_anuncio.png" width="600" alt="primer publicidad de apple" />
+    <p class="texto">Apple, la empresa fundada por Steve Jobs, Steve Wozniak y Ronald Wayne, nacio en el garaje de los padres de Jobs en Cupertino, 1976. Su primer producto, conocido como el <b>Apple I</b>, consistía en un ordenador personal que combinaba un microprocesador con una conexión para un teclado y un ratón.</p>
+    <!-- <img src="/images/primer_anuncio.png" width="600" alt="primer publicidad de apple" /> -->
   </div>
 
   {#if progress < 1}
@@ -179,12 +176,12 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Tim Cook presenta el iphone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido de todos los tiempos, llegando a vender 247.5 millones modelos. En este mismo evento se anuncia el Apple Watch.</p>
+          <p class="texto">Tim Cook presenta el iphone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido hasta ese momento, llegando a vender 247.5 millones modelos. En este mismo evento se anuncia el Apple Watch.</p>
         </div>
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto"> En este mismo evento se anuncia el Apple Watch, que se convierte en el reloj, no solo smartwatch, más vendido de todos los tiempos.</p>
+          <p class="texto"> En este mismo evento se anuncia el Apple Watch, que se convierte en el reloj, no solo smartwatch, más vendido hasta el momento.</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -218,20 +215,20 @@
   }
 
   .headline {
-    font-size: 30px;
+    font-size: 100px;
     line-height: 1.2;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     margin: 20px;
     color: #333;
   }
 
   .bajada {
-    font-size: 25px;
-    font-weight: normal;
+    font-size: 35px;
+    font-weight: bold;
     text-align: center;
     margin: 10px;
-    color: #666;
+    color: #acabab;
   }
 
   .anios {
@@ -239,11 +236,6 @@
     font-weight: bold;
     text-align: center;
     color: #333;
-  }
-
-  .headline b {
-    display: block;
-    font-size: 32px;
   }
 
   /* Estilos para el scroller */
@@ -333,7 +325,7 @@
   }
 
   .year-text.grey {
-    color: grey; /* Color gris para años no activos */
+    color: rgb(183, 181, 181); /* Color gris para años no activos */
   }
 
   .year-text.active {
