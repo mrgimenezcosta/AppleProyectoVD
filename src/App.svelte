@@ -2,6 +2,7 @@
   import Scroller from "@sveltejs/svelte-scroller";
   import DebugScroller from "./components/DebugScroller.svelte";
   import { onMount } from "svelte";
+  import { style } from "d3";
 
   let count;
   let index;
@@ -30,7 +31,7 @@
     2010: "icon_2010.png",
     2014: "icon_2014.png",
     2016: "icon_2016.png",
-    2023: "icon_2023.png"
+    2023: "icon_2023.png",
   };
 
   let uniqueYears = [...new Set(years)];
@@ -54,7 +55,7 @@
 
 <main>
   <div class="header" bind:this={headerElement}>
-    <img src="/images/logo_actual.png" width="100" alt="primer logo" />
+    <img src="/images/logo_moderno.png" width="150" alt="icono moderno" />
     <h3 class="headline">La evolución según Apple</h3>
     <p class="bajada">Think different.</p>
     <h3 class="anios">1976</h3>
@@ -71,7 +72,7 @@
       <div class="timeline-item">
         <span class="year-text {years[index] == year ? 'active' : 'grey'}">{year}</span>
         {#if years[index] == year && icons[year]}
-        <img src="/images/{icons[year]}" alt={year} />
+          <img src="/images/{icons[year]}" alt={year} class="{year === '2023' ? 'large-icon' : ''}" />
         {/if}
       </div>
     {/each}
@@ -97,7 +98,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Uno de los eventos que marcó el gran éxito de la compañía y que es uno de los principales hitos de la historia de Apple es la presentación del <b>Macintosh</b>, que se llevó a cabo el 24 de enero de 1984, de la mano de Steve Jobs. De hecho, a raíz de esta presentación se empezó a ver un cambio, de cierta manera, radical en el mundo de la informática, ya que este dispositivo se considera el primer ordenador personal con interfaz gráfica.</p>
+          <p class="texto">Uno de los eventos que marcó el gran éxito de la compañía y que es uno de los principales hitos de la historia de Apple es la presentación del <b>Macintosh</b>, que se llevó a cabo el 24 de enero de 1984, de la mano de Steve Jobs. A raíz de esta presentación se empezó a ver un cambio, de cierta manera, radical en el mundo de la informática, ya que este dispositivo se considera el primer ordenador personal con interfaz gráfica.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -126,7 +127,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación y diseño de vanguardia. Este fue solo el comienzo de una serie de productos que transformarían industrias enteras.</p>
+          <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -136,7 +137,7 @@
       </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Apple presentó el iPod, un reproductor de audio digital. Un producto que revolucionan la industria de la música digital.</p>
+          <p class="texto">Apple presentó el iPod, un reproductor de audio digital. Un producto que revoluciona la industria de la música digital.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -161,7 +162,7 @@
       </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">A tres años de haber hecho historia con la presentación del primer iPhone, Steve Jobs volvía a sorprender al mundo con el anuncio de iPad</p>
+          <p class="texto">Steve Jobs vuelve a sorprender al mundo con el anuncio de iPad</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -176,7 +177,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Tim Cook presenta el iphone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido hasta ese momento, llegando a vender 247.5 millones modelos. En este mismo evento se anuncia el Apple Watch.</p>
+          <p class="texto">Tim Cook presenta el iphone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido hasta ese momento, llegando a vender 247.5 millones modelos. </p>
         </div>
       </section>
       <section class="step_foreground">
@@ -191,7 +192,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto"> Anunciando la fecha de lanzamiento del Vision Pro Tim Cook explico: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado", dijo Cook. "Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
+          <p class="texto"> Anunciando la fecha de lanzamiento del Vision Pro Tim Cook explico: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado.Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -204,6 +205,7 @@
 </main>
 
 <style>
+
   .header {
     display: flex;
     justify-content: center;
@@ -211,7 +213,7 @@
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica', sans-serif;
   }
 
   .headline {
@@ -220,7 +222,7 @@
     font-weight: bold;
     text-align: center;
     margin: 20px;
-    color: #333;
+    color: #cecece;
   }
 
   .bajada {
@@ -235,7 +237,7 @@
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    color: #333;
+    color: #ffffff;
   }
 
   /* Estilos para el scroller */
@@ -262,7 +264,7 @@
   .epi_foreground {
     padding: 20px;
     max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.711);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,6 +284,7 @@
   .texto {
     margin-bottom: 50px;
     max-width: 740px;
+    font-size: 20px;
   }
 
   .image_container {
@@ -298,7 +301,7 @@
     transform: translateY(-50%);
     font-size: 30px;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
@@ -320,16 +323,21 @@
     margin-left: 10px;
   }
 
+  .timeline-item .large-icon {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+  }
+
   .year-text {
     transition: font-size 0.3s ease, color 0.3s ease; /* Transición para tamaño y color */
   }
 
   .year-text.grey {
-    color: rgb(183, 181, 181); /* Color gris para años no activos */
+    color: rgba(90, 90, 90, 0.767); /* Color gris para años no activos */
   }
 
   .year-text.active {
     font-size: 50px; /* Tamaño de la letra cuando está activo */
-    color: black; /* Color del texto cuando está activo */
+    color: rgb(255, 255, 255); /* Color del texto cuando está activo */
   }
 </style>
