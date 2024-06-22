@@ -18,10 +18,11 @@
     2: "lineas_stock_1984.png",
     3: "lineas_stock_1984.png",
     4: "lineas_stock_1998.png",
-    5: "lineas_income_1998.png"
+    5: "lineas_income_1998.png",
+    6: "chart_2016.png"
   };
 
-  let years = ["1980", "1984", "1984", "1985", "1997", "1998", "2001", "2006", "2007", "2010", "2011", "2014", "2014", "2016", "2023", "2023"];
+  let years = ["1980", "1984", "1985", "1997", "1998", "2001", "2006", "2007", "2010", "2011", "2014", "2014", "2016", "2023", "2023"];
   let icons = {
     1984: "icon_1984.png",
     1998: "icon_1998.png",
@@ -87,9 +88,10 @@
     bind:offset={offset}
     bind:progress={progress}
   >
-    <div slot="background" class="image_container">
-      <img src="/images/{charts[index]}" height="700" alt="chart {index}" class="charts" />
-    </div>
+  <div slot="background" class="image_container">
+    <img src="/images/{charts[index]}" height="700" alt="chart {index}" class="charts" />
+  </div>
+
     <div slot="foreground" class="foreground_container">
       <section class="step_foreground">
         <div class="epi_foreground">
@@ -106,7 +108,7 @@
           <img src="/images/macintosh.png" width="600" alt="primer publicidad de apple" />
         </div>
       </section> -->
-      <section class="step_foreground_foto">
+      <!-- <section class="step_foreground_foto">
         <div class="epi_foreground_foto">
           <video width="800" style="margin-bottom: 80px;" controls>
             <source src="/images/anuncioMacintosh.mp4" type="video/mp4">
@@ -114,7 +116,7 @@
             Tu navegador no soporta la reproducción de videos.
           </video>
         </div>
-      </section>
+      </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
           <p class="texto">Apple solicita la renuncia a Steve Jobs. Despues de esto, Apple continua pero se estanca y llegó a estar cerca de la quiebra.</p>
@@ -127,7 +129,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el iMac G3, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación.</p>
+          <p class="texto">Con el regreso de Steve Jobs, Apple lanzó el <b>iMac G3</b>, una computadora todo en uno que destacaba por su diseño único y colorido. El iMac no solo fue un éxito comercial, revitalizando las finanzas de Apple, sino que también simbolizó el renacimiento de la marca Apple como sinónimo de innovación.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -137,7 +139,7 @@
       </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Apple presentó el iPod, un reproductor de audio digital. Un producto que revoluciona la industria de la música digital.</p>
+          <p class="texto">Apple presentó el <b>iPod</b>, un reproductor de audio digital. Un producto que revoluciona la industria de la música digital.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -147,12 +149,12 @@
       </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Hasta 2006, Apple tenía en su catálogo varios modelos de iBook y PowerBook, que componían su línea de equipos portátiles. Sin embargo, ese año la compañía presentó una evolución de lo que ya existía, pero ahora con un estilo renovado y un nombre nuevo: MacBook.</p>
+          <p class="texto">Hasta 2006, Apple tenía en su catálogo varios modelos de iBook y PowerBook, que componían su línea de equipos portátiles. Sin embargo, ese año la compañía presentó una evolución de lo que ya existía, pero ahora con un estilo renovado y un nombre nuevo: <b>MacBook</b>.</p>
         </div>
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El Iphone.</p>
+          <p class="texto">Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El <b>Iphone</b>.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -162,7 +164,7 @@
       </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Steve Jobs vuelve a sorprender al mundo con el anuncio de iPad</p>
+          <p class="texto">Steve Jobs vuelve a sorprender al mundo con el anuncio de <b>iPad</b>.</p>
         </div>
       </section>
       <!-- <section class="step_foreground_foto">
@@ -182,17 +184,17 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto"> En este mismo evento se anuncia el Apple Watch, que se convierte en el reloj, no solo smartwatch, más vendido hasta el momento.</p>
+          <p class="texto"> En este mismo evento se anuncia el <b>Apple Watch</b>, que se convierte en el reloj, no solo smartwatch, más vendido hasta el momento.</p>
         </div>
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Apple reinventa los audífonos inalámbricos con los AirPods.</p>
+          <p class="texto">Apple reinventa los audífonos inalámbricos con los <b>AirPods</b>.</p>
         </div>
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto"> Anunciando la fecha de lanzamiento del Vision Pro Tim Cook explico: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado.Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
+          <p class="texto"> Anunciando la fecha de lanzamiento del <b>Vision Pro</b> Tim Cook explico: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado.Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -250,13 +252,12 @@
     padding-right: 50px; /* Ajusta este valor según sea necesario */
   }
 
-  .step_foreground,
-  .step_foreground_foto {
+  .step_foreground{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 1em;
     margin: 0;
   }
@@ -264,27 +265,18 @@
   .epi_foreground {
     padding: 20px;
     max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.711);
+    background-color: rgba(0, 0, 0, 0.443);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto; /* Centramos horizontalmente */
     border-radius: 10px;
-  }
-
-  .epi_foreground_foto {
-    padding: 20px;
-    text-align: center; /* Centramos el contenido */
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .texto {
     margin-bottom: 50px;
     max-width: 740px;
     font-size: 20px;
+    justify-content: center;
   }
 
   .image_container {
@@ -296,7 +288,7 @@
 
   .timeline {
     position: fixed;
-    left: 20px; /* Timeline on the left */
+    left: 20px; 
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
@@ -305,7 +297,7 @@
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
-    display: none; /* Ocultar inicialmente */
+    display: none; 
   }
 
   .timeline.visible {
