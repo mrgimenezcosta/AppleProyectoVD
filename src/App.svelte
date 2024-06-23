@@ -11,11 +11,12 @@
   let threshold = 0.5;
   let bottom = 0.9;
 
-  let years = ["1980", "1984", "1985", "1997", "1998", "2001", "2001", "2007","2007", "2010", "2011", "2014", "2014", "2016", "2023", "2023"];
+  let years = ["1985", "1997", "1998", "2001", "2001", "2007","2007", "2010", "2011", "2014", "2014", "2016", "2023", "2023"];
   let iframes = [
-    "https://datawrapper.dwcdn.net/dF8Wa/1/",
-    "https://datawrapper.dwcdn.net/zsQMZ/5/",
-    "https://datawrapper.dwcdn.net/zsQMZ/5/",
+    // "https://datawrapper.dwcdn.net/dF8Wa/1/",
+    // "https://datawrapper.dwcdn.net/zsQMZ/5/",
+    // "https://datawrapper.dwcdn.net/zsQMZ/5/",
+    "https://datawrapper.dwcdn.net/P0LxA/2/",
     "https://datawrapper.dwcdn.net/P0LxA/2/",
     "https://datawrapper.dwcdn.net/hputn/3/",
     "https://datawrapper.dwcdn.net/AT22n/1/",
@@ -62,12 +63,20 @@
     <h3 class="headline">La evolución según Apple</h3>
     <p class="bajada">Think different.</p>
     <h3 class="anios">1976</h3>
+    <img src="/images/icon_apple1.png" width="150" alt="icono apple1" />
     <p class="texto">Apple, la empresa fundada por Steve Jobs, Steve Wozniak y Ronald Wayne, nació en el garaje de los padres de Jobs en Cupertino, 1976. Su primer producto, conocido como el <b>Apple I</b>, consistía en un ordenador personal que combinaba un microprocesador con una conexión para un teclado y un ratón.</p>
+    <h3 class="anios">1980</h3>
+    <img src="/images/icon_1984.png" width="100" alt="icono macintosh" />
+    <p class="texto">El 12 de diciembre de 1980, Apple salió a la bolsa. Hasta entonces, solo algunos empleados tenían acciones de la empresa. En pocos minutos, se vendieron 4,6 millones de acciones a $22 cada una, aumentando el capital de Apple en $100 millones.</p>
+    <p class="dato">Si hubieras comprado una acción de Apple en 1980, hoy tendrías 224 acciones, valoradas en $46,368.</p> 
+    <!-- por una inversión de 81,62 si lo actualizamos a la inflación. -->
+    <p style="font-size: 30px;">Descubramos qué sucedió a lo largo de estos años:</p>
+
   </div>
 
-  {#if progress < 1}
+  <!-- {#if progress < 1}
   <DebugScroller index={index} count={count} offset={offset} progress={progress} />
-  {/if}
+  {/if} -->
 
   <div class="timeline" class:visible={showTimeline}>
     {#each uniqueYears as year, i}
@@ -98,7 +107,7 @@
     </div>
 
     <div slot="foreground" class="foreground_container">
-      <section class="step_foreground">
+      <!-- <section class="step_foreground">
         <div class="epi_foreground">
           <p class="texto">Entre septiembre de 1977 y septiembre de 1980, las ventas anuales crecieron de 775.000 dólares a 118 millones de dólares, una tasa de crecimiento anual promedio del 533%.</p>
         </div>
@@ -107,7 +116,7 @@
         <div class="epi_foreground">
           <p class="texto">Uno de los eventos que marcó el gran éxito de la compañía y que es uno de los principales hitos de la historia de Apple es la presentación del <b>Macintosh</b>, que se llevó a cabo el 24 de enero de 1984, de la mano de Steve Jobs. A raíz de esta presentación se empezó a ver un cambio, de cierta manera, radical en el mundo de la informática, ya que este dispositivo se considera el primer ordenador personal con interfaz gráfica.</p>
         </div>
-      </section>
+      </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
           <p class="texto">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
@@ -159,7 +168,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Este año marcó el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtió en la empresa más valiosa del mundo. Tim Cook asume como CEO.</p>
+          <p class="texto">Este año marcó el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtió en la empresa más valiosa del mundo, la capitalización de mercado alcanzó los 337 mil millones de dólares. Tim Cook asume como CEO.</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -189,6 +198,8 @@
       </section>
     </div>
   </Scroller>
+  <!-- dato curioso: -->
+  <!-- Si hubiera invertido 3.000 dólares en Apple el 9 de enero de 2007, el día en que Jobs anunció el iPhone, su inversión valdría más de 139.000 dólares hoy. -->
 </main>
 
 <style>
@@ -199,12 +210,20 @@
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica', sans-serif;
+    font-family: Roboto, 'Helvetica', sans-serif;
     text-align: center;
   }
 
   .headline {
     font-size: 100px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 20px;
+    color: #cecece;
+  }
+
+  .dato {
+    font-size: 40px;
     line-height: 1.2;
     font-weight: bold;
     margin: 20px;
@@ -222,12 +241,14 @@
     font-size: 40px;
     font-weight: bold;
     color: #ffffff;
+    font-family: Roboto, 'Helvetica', sans-serif;
   }
 
   .texto {
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     max-width: 740px;
+    font-family: Roboto, 'Helvetica', sans-serif;
   }
 
   .foreground_container {
