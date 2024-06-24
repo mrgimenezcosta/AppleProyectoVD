@@ -11,7 +11,7 @@
   let threshold = 0.5;
   let bottom = 0.9;
 
-  let years = ["1985", "1997", "1998", "2001", "2001", "2007","2007", "2010", "2011", "2014", "2014", "2016", "2023", "2023"];
+  let years = ["1985", "1997", "1998", "2001", "2001", "2007","2007", "2010", "2011", "2015","2015", "2016", "2023", "2023"];
   let iframes = [
     // "https://datawrapper.dwcdn.net/dF8Wa/1/",
     // "https://datawrapper.dwcdn.net/zsQMZ/5/",
@@ -23,6 +23,10 @@
     "https://datawrapper.dwcdn.net/Q10dh/1/",
     "https://datawrapper.dwcdn.net/17jj7/1/",
     "https://datawrapper.dwcdn.net/2uwHx/1/", 
+    "https://datawrapper.dwcdn.net/RGbPd/1/",
+    "https://datawrapper.dwcdn.net/fcExK/1/",
+    "https://datawrapper.dwcdn.net/6aHnQ/2/",
+    "https://datawrapper.dwcdn.net/6aHnQ/2/",
     "https://datawrapper.dwcdn.net/dChO2/4/"
   ];
 
@@ -33,7 +37,7 @@
     // 2006: "icon_2006.png",
     2007: "icon_2007.png",
     2010: "icon_2010.png",
-    2014: "icon_2014.png",
+    2015: "icon_2014.png",
     2016: "icon_2016.png",
     2023: "icon_2023.png",
   };
@@ -64,13 +68,13 @@
     <p class="bajada">Think different.</p>
     <h3 class="anios">1976</h3>
     <img src="/images/icon_apple1.png" width="150" alt="icono apple1" />
-    <p class="texto">Apple, la empresa fundada por Steve Jobs, Steve Wozniak y Ronald Wayne, nació en el garaje de los padres de Jobs en Cupertino, 1976. Su primer producto, conocido como el <b>Apple I</b>, consistía en un ordenador personal que combinaba un microprocesador con una conexión para un teclado y un ratón.</p>
+    <p class="textoheader">Apple, la empresa fundada por Steve Jobs, Steve Wozniak y Ronald Wayne, nació en el garaje de los padres de Jobs en Cupertino, 1976. Su primer producto, conocido como el <b>Apple I</b>, consistía en un ordenador personal que combinaba un microprocesador con una conexión para un teclado y un ratón.</p>
     <h3 class="anios">1980</h3>
     <img src="/images/icon_1984.png" width="100" alt="icono macintosh" />
-    <p class="texto">El 12 de diciembre de 1980, Apple salió a la bolsa. Hasta entonces, solo algunos empleados tenían acciones de la empresa. En pocos minutos, se vendieron 4,6 millones de acciones a $22 cada una, aumentando el capital de Apple en $100 millones.</p>
+    <p class="textoheader">El 12 de diciembre de 1980, Apple salió a la bolsa. En pocos minutos, se vendieron 4,6 millones de acciones a $22 cada una, aumentando el capital de Apple en $100 millones.</p>
     <p class="dato">Si hubieras comprado una acción de Apple en 1980, hoy tendrías 224 acciones, valoradas en $46,368.</p> 
     <!-- por una inversión de 81,62 si lo actualizamos a la inflación. -->
-    <p style="font-size: 30px;">Descubramos qué sucedió a lo largo de estos años:</p>
+    <p class="descubrir">Descubramos qué sucedió a lo largo de estos años:</p>
 
   </div>
 
@@ -119,12 +123,12 @@
       </section> -->
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
+          <p class="texto1">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
         </div>
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">En 1997, la directiva de Apple solicita a Jobs que regrese.</p>
+          <p class="texto1">En 1997, la directiva de Apple solicita a Jobs que regrese.</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -168,7 +172,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Este año marcó el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtió en la empresa más valiosa del mundo, la capitalización de mercado alcanzó los 337 mil millones de dólares. Tim Cook asume como CEO.</p>
+          <p class="texto">Este año marcó el fallecimiento de Steve Jobs, pero también fue el año en el que Apple se convirtió en la empresa más valiosa del mundo. Tim Cook asume como CEO.</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -178,7 +182,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">En este mismo evento se anuncia el <b>Apple Watch</b>, que se convierte en el reloj, no solo smartwatch, más vendido hasta el momento.</p>
+          <p class="texto">En este mismo evento se anuncia el <b>Apple Watch</b>, convirtiendose en el reloj más vendido a nivel mundial en 2017.</p>
         </div>
       </section>
       <section class="step_foreground">
@@ -193,14 +197,12 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Las acciones de Apple aumentaron un 1,5% en las primeras operaciones del lunes tras el anuncio de la fecha de lanzamiento del Vision Pro.</p>
+          <p class="texto">Las acciones de Apple aumentaron un 1,5% en las primeras operaciones del lunes tras el anuncio de la fecha de lanzamiento del Vision Pro. Apple es la primera empresa que alcanza un valor de mercado de más de 3 billones de dólares</p>
         </div>
       </section>
     </div>
   </Scroller>
-  <!-- dato curioso: -->
-  <!-- Si hubiera invertido 3.000 dólares en Apple el 9 de enero de 2007, el día en que Jobs anunció el iPhone, su inversión valdría más de 139.000 dólares hoy. -->
-</main>
+ </main>
 
 <style>
   .header {
@@ -212,6 +214,7 @@
     margin-bottom: 80px;
     font-family: Roboto, 'Helvetica', sans-serif;
     text-align: center;
+    padding: 20px; 
   }
 
   .headline {
@@ -220,21 +223,51 @@
     font-weight: bold;
     margin: 20px;
     color: #cecece;
+    padding: 20px;
   }
 
-  .dato {
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: bold;
-    margin: 20px;
-    color: #cecece;
+  .dato {   
+    font-size: 40px;   
+    line-height: 1.2;   
+    font-weight: bold;   
+    margin: 20px;   
+    color: #cecece;   
+    padding: 40px;   
+    border: 2px solid transparent;    
+    position: relative;   
+    z-index: 1; 
+    padding: 20px; 
+  }  
+  
+  .dato::before {   
+    content: '';   
+    position: absolute;   
+    top: -10px;   
+    left: -10px;   
+    right: -10px;   
+    bottom: -10px;   
+    border: 2px solid transparent;   
+    border-image: linear-gradient(45deg, #e97c10, #ff0095, #1910c5, #7706b9, #00aaff) 1;   
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),               0 0 20px rgba(255, 0, 0, 0.5),               0 0 20px rgba(255, 255, 0, 0.5),               0 0 20px rgba(0, 255, 0, 0.5),               0 0 20px rgba(0, 255, 255, 0.5),               0 0 20px rgba(0, 0, 255, 0.5),               0 0 20px rgba(255, 0, 255, 0.5);   
+    z-index: -1;   
+    border-radius: 10px; 
   }
 
   .bajada {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     margin: 10px;
     color: #acabab;
+    font-family: Roboto, 'Helvetica', sans-serif;
+    padding: 20px;
+  }
+
+  .descubrir{
+    font-size: 30px;
+    margin: 10px;
+    color: #acabab;
+    font-family: Roboto, 'Helvetica', sans-serif;
+    padding: 80px; 
   }
 
   .anios {
@@ -242,6 +275,15 @@
     font-weight: bold;
     color: #ffffff;
     font-family: Roboto, 'Helvetica', sans-serif;
+    padding: 20px; 
+  }
+
+  .textoheader {
+    font-size: 20px;
+    text-align: center;
+    max-width: 740px;
+    font-family: Roboto, 'Helvetica', sans-serif;
+    padding: 50px; 
   }
 
   .texto {
@@ -251,13 +293,37 @@
     font-family: Roboto, 'Helvetica', sans-serif;
   }
 
+  .texto1 {   
+    font-size: 20px;   
+    line-height: 1.2;   
+    font-weight: 500;   
+    margin: 20px;   
+    color: #cecece;   
+    padding: 10px;   
+    position: relative;   
+    background-color: rgba(0, 0, 0, 0.357); 
+  }  
+    
+    .texto1::before {   
+      content: '';   
+      position: absolute;   
+      top: -10px;   
+      left: -10px;   
+      right: -10px;   
+      bottom: -10px;   
+      border: 5px solid transparent;   
+      border-image-source: linear-gradient(to right, #7efc00a8 16.66%, #ffd9008e 16.66%, #ffd700 33.32%, #ffa500 33.32%, #ffa6009e 49.98%, #ff440096 49.98%, #ff4400b1 66.64%, #800080a1 66.64%, #800080 83.3%, #1e90ff 83.3%);   
+      border-image-slice: 1;    
+      z-index: -1; 
+    }
+
   .foreground_container {
     pointer-events: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    padding-right: 50px;
+    
   }
 
   .step_foreground {
