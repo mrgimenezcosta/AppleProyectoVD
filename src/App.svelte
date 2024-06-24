@@ -27,7 +27,8 @@
     "https://datawrapper.dwcdn.net/fcExK/1/",
     "https://datawrapper.dwcdn.net/6aHnQ/2/",
     "https://datawrapper.dwcdn.net/6aHnQ/2/",
-    "https://datawrapper.dwcdn.net/dChO2/4/"
+    "https://datawrapper.dwcdn.net/E6kyj/1/",
+    "https://datawrapper.dwcdn.net/04JpA/1/"
   ];
 
   let icons = {
@@ -155,7 +156,7 @@
 
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">El 9 de enero de 2007, Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El <b>Iphone</b>.</p>
+          <p class="texto">El 9 de enero de 2007, Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El <b>iPhone</b>.</p>
         </div>
       </section>
       
@@ -177,7 +178,7 @@
       </section>
       <section class="step_foreground">
         <div class="epi_foreground">
-          <p class="texto">Tim Cook presenta el iphone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido hasta ese momento, llegando a vender 247.5 millones de modelos. </p>
+          <p class="texto">Tim Cook presenta el iPhone 6 y 6 plus, que juntos se convertirían en el smartphone más vendido hasta ese momento, llegando a vender 247.5 millones de modelos. </p>
         </div>
       </section>
       <section class="step_foreground">
