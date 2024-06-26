@@ -17,7 +17,7 @@
     // "https://datawrapper.dwcdn.net/zsQMZ/5/",
     // "https://datawrapper.dwcdn.net/zsQMZ/5/",
     "https://datawrapper.dwcdn.net/P0LxA/2/",
-    "https://datawrapper.dwcdn.net/P0LxA/2/",
+    "https://datawrapper.dwcdn.net/QA8Qh/1/",
     "https://datawrapper.dwcdn.net/hputn/3/",
     "https://datawrapper.dwcdn.net/AT22n/1/",
     "https://datawrapper.dwcdn.net/Q10dh/1/",
