@@ -60,14 +60,14 @@
     <div class="header" bind:this={headerElement}>
       <img src="/images/logo_moderno.png" width="150" alt="icono moderno" />
       <h3 class="headline">La evolución según Apple</h3>
-      <p class="bajada">Una historia a través de la visualización datos</p>
+      <p class="bajada">Una historia a través de los datos</p>
       <h3 class="anios">1976</h3>
       <img src="/images/icon_apple1.png" width="150" alt="icono apple1" />
       <p class="textoheader">Apple, la empresa fundada por Steve Jobs, Steve Wozniak y Ronald Wayne, nació en el garaje de los padres de Jobs en Cupertino, 1976. Su primer producto, conocido como el <b>Apple I</b>, consistía en un ordenador personal que combinaba un microprocesador con una conexión para un teclado y un ratón.</p>
       <h3 class="anios">1980</h3>
       <img src="/images/icon_1984.png" width="100" alt="icono macintosh" />
       <p class="textoheader">El 12 de diciembre de 1980, Apple salió a la bolsa. En pocos minutos, se vendieron 4,6 millones de acciones a $22 cada una, aumentando el capital de Apple en $100 millones.</p>
-      <p class="dato">Si hubieras comprado una acción de Apple en 1980, hoy tendrías 224 acciones, valoradas en $46.368</p> 
+      <p class="dato">Si hubieras comprado una acción de Apple en 1980, a $22, hoy estarian valoradas en $46.368</p> 
       <h3 class="anios">1985</h3>
       <p class="textoheader">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
       <!-- por una inversión de 81,62 si lo actualizamos a la inflación. -->
