@@ -69,6 +69,7 @@
       <p class="textoheader">El 12 de diciembre de 1980, Apple salió a la bolsa. En pocos minutos, se vendieron 4,6 millones de acciones a $22 cada una, aumentando el capital de Apple en $100 millones.</p>
       <p class="dato">Si hubieras comprado una acción de Apple en 1980, a $22, hoy estarian valoradas en $46.368</p> 
       <h3 class="anios">1985</h3>
+      <img src="/images/icon_1985.png" width="150" alt="icono macintosh" />
       <p class="textoheader">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
       <!-- por una inversión de 81,62 si lo actualizamos a la inflación. -->
       <p class="anios">Descubramos qué sucedió a lo largo de estos años:</p>
