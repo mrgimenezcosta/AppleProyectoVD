@@ -2,6 +2,7 @@
   import Scroller from "@sveltejs/svelte-scroller";
   import DebugScroller from "./components/DebugScroller.svelte";
   import { onMount } from "svelte";
+  import Quiz from './quiz.svelte';
 
   let count;
   let index;
@@ -70,7 +71,7 @@
       <h3 class="anios">1980</h3>
       <img src="/images/icon_1984.png" width="100" alt="icono macintosh" />
       <p class="textoheader">El 12 de diciembre de 1980, Apple salió a la bolsa. En pocos minutos, se vendieron 4,6 millones de acciones a $22 cada una, aumentando el capital de Apple en $100 millones.</p>
-      <p class="dato">Si hubieras comprado una acción de Apple en 1980, a $22, hoy estarian valoradas en $46.368</p> 
+      <Quiz /> 
       <h3 class="anios">1985</h3>
       <img src="/images/icon_1985.png" width="150" alt="icono macintosh" />
       <p class="textoheader">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
@@ -224,34 +225,7 @@
     color: #cecece;
     padding: 20px;
   }
-  
-  .dato {   
-    font-size: 40px;   
-    line-height: 1.2;   
-    font-weight: bold;   
-    margin: 20px;   
-    color: #cecece;   
-    padding: 40px;   
-    border: 2px solid transparent;    
-    position: relative;   
-    z-index: 1; 
-    padding: 20px; 
-  }  
-    
-  .dato::before {   
-    content: '';   
-    position: absolute;   
-    top: -10px;   
-    left: -10px;   
-    right: -10px;   
-    bottom: -10px;   
-    border: 2px solid transparent;   
-    border-image: linear-gradient(45deg, #e97c10, #ff0095, #1910c5, #7706b9, #00aaff) 1;   
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5),               0 0 20px rgba(255, 0, 0, 0.5),               0 0 20px rgba(255, 255, 0, 0.5),               0 0 20px rgba(0, 255, 0, 0.5),               0 0 20px rgba(0, 255, 255, 0.5),               0 0 20px rgba(0, 0, 255, 0.5),               0 0 20px rgba(255, 0, 255, 0.5);   
-    z-index: -1;   
-    border-radius: 10px; 
-  }
-  
+
   .bajada {
 
     font-size: 40px;
