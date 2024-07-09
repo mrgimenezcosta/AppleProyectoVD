@@ -17,15 +17,13 @@
     "https://datawrapper.dwcdn.net/hputn/3/",
     "https://datawrapper.dwcdn.net/AT22n/1/",
     "https://datawrapper.dwcdn.net/Q10dh/1/",
-    "https://datawrapper.dwcdn.net/17jj7/1/",
-    "https://datawrapper.dwcdn.net/2uwHx/1/", 
+    "https://datawrapper.dwcdn.net/2uwHx/1/",
+    "https://datawrapper.dwcdn.net/17jj7/1/", 
     "https://datawrapper.dwcdn.net/RGbPd/1/",
     "https://datawrapper.dwcdn.net/fcExK/1/",
     "https://datawrapper.dwcdn.net/6aHnQ/2/",
-    // "https://datawrapper.dwcdn.net/6aHnQ/2/",
     "https://datawrapper.dwcdn.net/E6kyj/1/",
     "https://datawrapper.dwcdn.net/nXLtD/1/"
-    // "https://datawrapper.dwcdn.net/04JpA/1/"
   ];
 
   let icons = {
@@ -41,20 +39,25 @@
   let uniqueYears = [...new Set(years)];
   let showTimeline = false;
   let headerElement;
+  let footerElement;
 
   const handleScroll = () => {
-      if (headerElement) {
-        const headerBottom = headerElement.getBoundingClientRect().bottom;
-      }
-    };
+    if (headerElement && footerElement) {
+      const headerBottom = headerElement.getBoundingClientRect().bottom;
+      const footerTop = footerElement.getBoundingClientRect().top;
+      showTimeline = headerBottom <= window.innerHeight && footerTop > window.innerHeight;
+    }
+  };
 
   onMount(() => {
+    handleScroll(); // Inicializa el estado de showTimeline en el primer montaje
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
 </script>
+
 <body>
   <main>
     <div class="header" bind:this={headerElement}>
@@ -71,12 +74,10 @@
       <h3 class="anios">1985</h3>
       <img src="/images/icon_1985.png" width="150" alt="icono macintosh" />
       <p class="textoheader">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
-      <!-- por una inversión de 81,62 si lo actualizamos a la inflación. -->
-      <p class="anios">Descubramos qué sucedió a lo largo de estos años:</p>
-
+      <p class="anios" style="padding-top: 450px;">Descubramos qué sucedió a lo largo de estos años:</p>
     </div>
 
-    <div class="timeline {progress < 1 ? 'visible' : ''}">
+    <div class="timeline {showTimeline ? 'visible' : ''}">
       {#each uniqueYears as year, i}
         <div class="timeline-item">
           <span class="year-text {years[index] == year ? 'active' : 'grey'}">{year}</span>
@@ -131,19 +132,19 @@
 
         <section class="step_foreground">
           <div class="epi_foreground">
-            <p class="texto">El 9 de enero de 2007, Steve Jobs anunció que iba a presentar tres productos: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”. Esos tres productos eran uno solo: El <b>iPhone</b>.</p>
+            <p class="texto">El 9 de enero de 2007, Steve Jobs anunció que iba a presentar el <b>iPhone</b>, las acciones de Apple se dispararon a un máximo histórico de USD 97 por acción.</p>
           </div>
         </section>
         
         <section class="step_foreground">
           <div class="epi_foreground">
-            <p class="texto">Las acciones de Apple se dispararon a un máximo histórico de USD 97 por acción.</p>
+            <p class="texto">Eran tres productos en uno solo: “un iPod con gran pantalla táctil, un teléfono móvil revolucionario, y un dispositivo avanzado de comunicación conectado a Internet”.</p>
           </div>
         </section>
 
         <section class="step_foreground">
           <div class="epi_foreground">
-            <p class="texto">Steve Jobs vuelve a sorprender al mundo con el anuncio de <b>iPad</b>.</p>
+            <p class="texto">Steve Jobs vuelve a sorprender al mundo con el <b>iPad</b>.</p>
           </div>
         </section>
 
@@ -169,23 +170,17 @@
             <p class="texto">Anunciando la fecha de lanzamiento del <b>Vision Pro</b> Tim Cook explicó: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado. Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
           </div>
         </section>
-        <!-- <section class="step_foreground">
-          <div class="epi_foreground">
-            <p class="texto">Las acciones de Apple aumentaron un 1,5% en las primeras operaciones del lunes tras el anuncio de la fecha de lanzamiento del Vision Pro. Apple es la primera empresa que alcanza un valor de mercado de más de 3 billones de dólares</p>
-          </div>
-        </section> -->
       </div>
     </Scroller>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" bind:this={footerElement}>
     <p class="logos">Actualidad</p>
     <p class="textoheader">En la actualidad, Apple se mantiene como una de las empresas tecnológicas más influyentes y valiosas del mundo. Desde su modesto comienzo en un garaje hasta convertirse en la primera compañía en alcanzar un valor de mercado de más de 3 billones de dólares, Apple continúa liderando la industria con innovaciones revolucionarias. Con productos icónicos como el iPhone, el iPad, el Apple Watch y el reciente Vision Pro, la visión de Apple sigue inspirando a millones de personas alrededor del mundo.</p>
 
     <p class="logos">Evolución de los logos a lo largo de los años</p>
     <img src="images/applelogos.png" alt="logos" />
   </footer>
-
 </body>
 
 <style>
@@ -258,6 +253,7 @@
   }
   
   .bajada {
+
     font-size: 40px;
     font-weight: bold;
     margin: 10px;
@@ -266,13 +262,13 @@
     padding: 20px;
   }
   
-  .descubrir {
+  /* .descubrir {
     font-size: 30px;
     margin: 10px;
     color: #acabab;
     font-family: Roboto, 'Helvetica', sans-serif;
     padding: 80px; 
-  }
+  } */
   
   .anios {
     font-size: 40px;
@@ -384,15 +380,3 @@
   }
   
 </style>
-
-<!-- ajustar titulos
-marcar anos del grafico
-logo al final 
-claridad en los graficos, acento en los graficos
-unifocar unidades de Ingresos (eeuu)
-sacar el enmarcado
-max width (1600 pixeles)
-la historia de apple en numeros
-una historia a traves de datos
-muy pesado para un destacado, el destacado de los anios 
-icono iphone mas chico-->
