@@ -1,59 +1,33 @@
-# VD | Svelte Scroller Template 
+# Proyecto VD | Svelte Scroller Template
 
-### Maqueta de proyecto que implementa svelte-scroller para filtrar datos y mostrar visualizaciones de datos en una página web con efecto de scrollytelling.
----
+## Descripción del Proyecto
+Nuestro proyecto consiste en una página web interactiva que cuenta la evolución de Apple, desde el inicio hasta la actualidad, a través de una línea de tiempo y secciones con información detallada de eventos significativos. Utilizamos Svelte para la construcción de componentes dinámicos y Svelte Scroller para manejar la navegación fluida entre secciones.
 
-### Referencias: 
-- [https://github.com/sveltejs/svelte-scroller](https://github.com/sveltejs/svelte-scroller)
-- [Escalas de d3.js](https://d3js.org/d3-scale)
-[API de Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+## Estructura del Proyecto
 
-![thumbnail](thumbnail.png)
+### Componentes Importados
+- **Scroller**: Componente de Svelte Scroller que permite crear una experiencia de desplazamiento fluido.
+- **Quiz**: Componente del cuestionario incluido en la sección de encabezado.
 
----
+### Variables Principales
+- **count, index, offset, progress**: Variables vinculadas al scroller.
+- **top, threshold, bottom**: Parámetros de configuración del scroller.
+- **years**: Array con los años importantes en la historia de Apple.
+- **iframes**: URLs de los gráficos hechos con DataWrapper que se muestran en cada sección.
+- **icons**: Iconos asociados a ciertos años.
+- **uniqueYears**: Array con los años únicos extraídos de years.
+- **showTimeline**: Booleano para mostrar u ocultar la línea de tiempo.
 
-This template should help get you started developing with Svelte in Vite.
+### Funciones Principales
+- **handleScroll**: Maneja la visibilidad de la línea de tiempo en función del desplazamiento de la página.
+- **onMount**: Agrega un evento de escucha para manejar el desplazamiento cuando el componente se monta.
 
-## Recommended IDE Setup
+## Estructura del HTML
+- **Encabezado (header)**: Contiene el logo, el título, subtítulos, y secciones históricas con texto desde 1976 (creación) hasta 1985. Incluye un componente Quiz al final del encabezado.
+- **Línea de Tiempo (timeline)**: Muestra los años de forma fija a la izquierda de la página durante las secciones.
+- **Pie de Página (footer)**: Contiene información actual de Apple y una imagen con la evolución de los logos, además de información personal de contacto.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
-
-## Need an official Svelte framework?
-
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
-
-## Technical considerations
-
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from "svelte/store"
-export default writable(0)
-```
+## Estilos
+- Utilizamos la fuente Roboto para los textos, similar a la fuente de Apple.
+- Encuadramos la información descriptiva de los años en marcos blancos.
+- Resaltamos con colores en los gráficos para indicar la posición actual.
