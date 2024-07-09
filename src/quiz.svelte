@@ -37,12 +37,7 @@
     right: -15px;
     bottom: -15px;
     border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #e97c10, #ff0095, #1910c5, #7706b9, #00aaff) 1;
-    box-shadow: 0 0 10px #e97c10,
-                0 0 10px #ff0095,
-                0 0 10px #1910c5,
-                0 0 10px #7706b9,
-                0 0 10px #00aaff;
+    border-color: white;
     z-index: -1;
     border-radius: 15px;
   }
@@ -96,6 +91,6 @@
   </div>
   <button class="button" on:click={checkAnswer}>Submit</button>
   {#if isCorrect !== null}
-    <p class="result">{isCorrect ? '¡Correcto!' : 'Incorrecto. La respuesta correcta es 46,368 dólares.'}</p>
+    <p class="result">{isCorrect ? '¡Correcto!' : 'Incorrecto. La respuesta correcta es 46.368 dólares.'}</p>
   {/if}
 </div>

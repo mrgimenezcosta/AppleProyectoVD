@@ -80,3 +80,51 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.foot {
+  background-color: #000000;
+  padding: 20px 0;
+  color: #ffffff; /* Color del texto en blanco */
+}
+
+footer {
+  margin-top: 50px;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contacto-persona {
+  text-align: center;
+}
+
+.contacto-persona p {
+  margin: 0;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px; /* Espacio superior para separar los iconos del texto */
+}
+
+.social-icons li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-icons a {
+  color: #ffffff !important; /* Color de los íconos en blanco con !important para asegurar que se aplique */
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.recolecion-datos {
+  text-align: center;
+  margin-top: 20px;
+}

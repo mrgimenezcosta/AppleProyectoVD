@@ -177,7 +177,7 @@
 
   <footer class="footer" bind:this={footerElement}>
     <p class="logos">Actualidad</p>
-    <p class="textoheader">En la actualidad, Apple se mantiene como una de las empresas tecnológicas más influyentes y valiosas del mundo. Desde su modesto comienzo en un garaje hasta convertirse en la primera compañía en alcanzar un valor de mercado de más de 3 billones de dólares, Apple continúa liderando la industria con innovaciones revolucionarias. Con productos icónicos como el iPhone, el iPad, el Apple Watch y el reciente Vision Pro, la visión de Apple sigue inspirando a millones de personas alrededor del mundo.</p>
+    <p class="textoheader">En la actualidad, Apple no solo se mantiene como una de las empresas tecnológicas más influyentes y valiosas del mundo, sino que sigue rompiendo barreras. Desde su inicio en un garaje hasta convertirse en la primera compañía en superar los 3 billones de dólares en valor de mercado, Apple ha redefinido la innovación con productos icónicos como el iPhone, el iPad y el Apple Watch. Su último avance, el Vision Pro, está revolucionando la realidad aumentada. </p>
 
     <p class="logos">Evolución de los logos a lo largo de los años</p>
     <img src="images/applelogos.png" alt="logos" />
