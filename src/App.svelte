@@ -74,7 +74,7 @@
       <Quiz /> 
       <h3 class="anios">1985</h3>
       <img src="/images/icon_1985.png" width="150" alt="icono macintosh" />
-      <p class="textoheader">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa pero se estanca y llegó a estar cerca de la quiebra.</p>
+      <p class="textoheader">Apple solicita la renuncia a Steve Jobs. Después de esto, Apple continúa, pero se estanca y llegó a estar cerca de la quiebra.</p>
       <p class="anios" style="padding-top: 450px;">Descubramos qué sucedió a lo largo de estos años:</p>
     </div>
 
@@ -127,7 +127,7 @@
 
         <section class="step_foreground">
           <div class="epi_foreground">
-            <p class="texto">Entre 2003 y 2006, los precios de las acciones de Apple subieron de USD 6 a mas de USD 80 por acción. Un aumento porcentual de 1233.33%, esta subida tan grande se le puede atribuir a las ventas del iPod.</p>
+            <p class="texto">Entre 2003 y 2006, los precios de las acciones de Apple subieron de USD 6 a más de USD 80 por acción. Un aumento porcentual de 1233.33%, esta subida tan grande se le puede atribuir a las ventas del iPod.</p>
           </div>
         </section>
 
@@ -157,7 +157,7 @@
 
         <section class="step_foreground">
           <div class="epi_foreground">
-            <p class="texto">Tim Cook anuncia el <b>Apple Watch</b>, convirtiendose en el reloj más vendido a nivel mundial en 2017.</p>
+            <p class="texto">Tim Cook anuncia el <b>Apple Watch</b>, convirtiéndose en el reloj más vendido a nivel mundial en 2017.</p>
           </div>
         </section>
 
@@ -168,7 +168,7 @@
         </section>
         <section class="step_foreground">
           <div class="epi_foreground">
-            <p class="texto">Anunciando la fecha de lanzamiento del <b>Vision Pro</b> Tim Cook explicó: "Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado. Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos".</p>
+            <p class="texto">Anunciando la fecha de lanzamiento del <b>Vision Pro</b> Tim Cook explicó: “Apple Vision Pro es el dispositivo de electrónica de consumo más avanzado jamás creado. Su revolucionaria y mágica interfaz de usuario redefinirá cómo nos conectamos, creamos y exploramos”.</p>
           </div>
         </section>
       </div>
@@ -176,11 +176,12 @@
   </main>
 
   <footer class="footer" bind:this={footerElement}>
-    <p class="logos">Actualidad</p>
+    <p class="actualidad">Actualidad</p>
+    <img src="/images/icon_2023.png" alt="visionpro" />
     <p class="textoheader">En la actualidad, Apple no solo se mantiene como una de las empresas tecnológicas más influyentes y valiosas del mundo, sino que sigue rompiendo barreras. Desde su inicio en un garaje hasta convertirse en la primera compañía en superar los 3 billones de dólares en valor de mercado, Apple ha redefinido la innovación con productos icónicos como el iPhone, el iPad y el Apple Watch. Su último avance, el Vision Pro, está revolucionando la realidad aumentada. </p>
 
     <p class="logos">Evolución de los logos a lo largo de los años</p>
-    <img src="images/applelogos.png" alt="logos" />
+    <img src="images/applelogos.png"  alt="logos" />
   </footer>
 </body>
 
@@ -192,7 +193,17 @@
     text-align: center;
     width: 100%;
     padding: 20px;
-    padding-top: 700px;
+    padding-top: 300px;
+  }
+
+  .actualidad {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 20px;
+    color: #cecece;
+    padding: 20px;
+    font-family: Roboto, 'Helvetica', sans-serif;
   }
   
   .logos {
@@ -201,7 +212,7 @@
     font-weight: bold;
     margin: 20px;
     color: #cecece;
-    padding: 20px;
+    padding-top: 300px;
     font-family: Roboto, 'Helvetica', sans-serif;
   }
   

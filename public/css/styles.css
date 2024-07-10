@@ -121,7 +121,7 @@ footer {
 .social-icons a {
   color: #ffffff !important; /* Color de los íconos en blanco con !important para asegurar que se aplique */
   text-decoration: none;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .recolecion-datos {
