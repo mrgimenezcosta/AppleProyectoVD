@@ -62,7 +62,7 @@
 <body>
   <main>
     <div class="header" bind:this={headerElement}>
-      <img src="/images/logo_moderno.png" width="150" alt="icono moderno" />
+      <img src="/images/logo2024.gif" width="200" alt="GIF animado logo" />    
       <h3 class="headline">La evolución según Apple</h3>
       <p class="bajada">Una historia a través de los datos</p>
       <h3 class="anios">1976</h3>
